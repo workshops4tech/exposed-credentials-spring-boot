@@ -4,7 +4,7 @@ spring:
   config.activate.on-profile: prod
   liquibase:
     user: ${DB_LIQUIBASE_USER:api_liquibase}
-    password: ${DB_LIQUIBASE_PASS:senhasuperforte}
+    password: ${DB_LIQUIBASE_PASS:}
   jpa:
     show-sql: false
   rabbitmq:
