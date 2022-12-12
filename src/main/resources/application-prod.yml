@@ -1,0 +1,11 @@
+# Application properties
+
+spring:
+  config.activate.on-profile: prod
+  liquibase:
+    user: ${DB_LIQUIBASE_USER:api_liquibase}
+    password: ${DB_LIQUIBASE_PASS:senhasuperforte}
+  jpa:
+    show-sql: false
+  rabbitmq:
+    virtual-host: prod

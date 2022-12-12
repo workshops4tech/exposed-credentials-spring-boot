@@ -1,0 +1,24 @@
+# Application properties
+spring:
+  profiles:
+    active: @activatedProperties@
+  application:
+    name: random-api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${spring.datasource.host}:${DB_PORT:3306}/db_api
+    username: ${DB_USER:root}
+    password: ${DB_PASS:toor}
+    host: ${DB_HOST:localhost}
+  rabbitmq:
+    host: ${RABBITMQ_HOST:1.1.1.1}
+    port: ${RABBITMQ_PORT:30672}
+    username: ${RABBITMQ_USER:random.local}
+    password: ${RABBITMQ_PASSWORD:16351aczxc}
+    virtual-host: local
+  redis:
+    host: localhost
+    port: 6379
+    username: random-api
+    defaultPassword: asd12@fda
+    password: passwordteste
