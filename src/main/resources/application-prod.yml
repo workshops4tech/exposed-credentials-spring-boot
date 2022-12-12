@@ -3,7 +3,7 @@
 spring:
   config.activate.on-profile: prod
   liquibase:
-    user: ${DB_LIQUIBASE_USER:api_liquibase}
+    user: ${DB_LIQUIBASE_USER:api_liquibase_user}
     password: ${DB_LIQUIBASE_PASS:}
   jpa:
     show-sql: false
